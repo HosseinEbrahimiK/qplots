@@ -8,7 +8,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-Qplots provides a function to plot variables of a data frame so that
+qplots provides a function to plot variables of a data frame so that
 basic statistics of variables can be obtained immediately.
 
 -   `diquick_dist()`: plots density distribution of numeric variables or

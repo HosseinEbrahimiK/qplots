@@ -3,7 +3,7 @@ Title: quick plots
 Version: 0.1.0
 Authors@R: 
     person("Hossein", "EbrahimiKondori", , "hossein.ebrahimiko@gmail.com", role = c("aut", "cre"))
-Description: Quick plotting variables of a data frame.
+Description: A tool for quickly plotting the distribution of variables in a data frame.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
