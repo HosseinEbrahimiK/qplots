@@ -3,11 +3,15 @@
 
 # qplots
 
+## Overview
+
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of qplots is to quickly plot variables of a data frame so that
-you can obtain basic information regarding variables of the data.
+Qplots provides a function to plot variables of a data frame so that
+basic statistics of variables can be obtained immediately. -
+`diquick_dist()`: plots density distribution of numeric variables or
+barplot of category/factor variables in a data frame.
 
 ## Installation
 
@@ -18,11 +22,13 @@ repository like so:
 devtools::install_github("HosseinEbrahimiK/qplots")
 ```
 
-## Example
+## Usage
 
-This is a basic example which shows you how to solve a common problem
-within a dataframe. Here, we have used `gapminder` dataset as an
-example:
+These are basic examples that demonstrate some use cases of our function
+for datasets. We have used the `gapminder` dataset for this purpose. The
+first two examples are numerical variables, and the outputs are density
+distributions as expected. The last example includes a categorical
+column in the data, which the result will be a bar plot of frequencies.
 
 ``` r
 library(qplots)
@@ -43,3 +49,14 @@ quick_dist(gapminder::gapminder, "continent") # a categorical variable
 ```
 
 <img src="man/figures/README-example-3.png" width="100%" />
+
+## Getting help
+
+If you encounter a clear bug, please file an issue with a minimal
+reproducible example on
+[GitHub](https://github.com/HosseinEbrahimiK/qplots/issues).
+
+------------------------------------------------------------------------
+
+Please note that this package is a part of assignments of *[STAT 545B @
+UBC](https://stat545.stat.ubc.ca/syllabus-545b/)* course.
