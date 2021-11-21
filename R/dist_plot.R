@@ -51,10 +51,13 @@ quick_dist <- function(df, var_name, na.rm = TRUE){
 
       ggplot2::ggplot(ggplot2::aes(!!var_name)) +
       ggplot2::geom_density(fill = 'dodgerblue', alpha = 0.5) +
-      ggplot2::geom_vline(ggplot2::aes(xintercept=mu), linetype="dashed", color='red') +
+      ggplot2::geom_vline(ggplot2::aes(xintercept=mu,  color="mean"), linetype="dashed") +
+      ggplot2::scale_color_manual(
+        name = "statistics",
+        values = c("mean" = "red")) +
       ggplot2::theme_bw() +
       ggplot2::xlab(var_name)
-  }
+    }
 
   else if (is.factor(var) || is.character(var)){
 
