@@ -2,12 +2,12 @@
 #'
 #' `quick_dist()` function takes two arguments as the input, a data frame and one of its columns.
 #'  It plots the distribution of the given variable in the dataset.
-#' @param df A data frame object. The output plot is based on one of df's variables. Since it should be a data frame, we have called it "df," the initials of the data frame.
+#' @param df A data frame object. The output plot is based on one of df's variables.
 #' @param var_name A variable (column) in characters format in the provided data frame, df.
 #'  It should be an object of numeric, factor (categorical), or character classes.
 #'  If numeric, the output is the density plot of the distribution.
-#'  If factor or character, the output is a bar chart of frequencies of categories. Since it reflects the name of a variable in characters (double quotations), we have called it "var_name" in the function's body.
-#' @param na.rm If TRUE, the default, missing values are silently removed. If FALSE, missing values are removed with a warning. We have got the name by putting together the words NA and remove.
+#'  If factor or character, the output is a bar chart of frequencies of categories.
+#' @param na.rm If TRUE, the default, missing values are silently removed. If FALSE, missing values are removed with a warning.
 #' @return A plotted distribution based on the given column in the data frame input. Based on the class of input variable, it is either a density plot of the distribution or a bar chart of counts of categories.
 #' @examples
 #' # examples with the gapminder dataset
