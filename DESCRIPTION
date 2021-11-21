@@ -1,6 +1,6 @@
 Package: qplots
 Title: quick plots
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person("Hossein", "EbrahimiKondori", , "hossein.ebrahimiko@gmail.com", role = c("aut", "cre"))
 Description: A tool for quickly plotting the distribution of variables in a data frame.
