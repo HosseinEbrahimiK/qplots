@@ -6,8 +6,8 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of qplots is to quick plotting variables of a data frame so
-that you can obtain basic information regrading variables of the data.
+The goal of qplots is to quickly plot variables of a data frame so that
+you can obtain basic information regarding variables of the data.
 
 ## Installation
 
