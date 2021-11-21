@@ -1,7 +1,7 @@
-plt1 <- quick_dist(gapminder::gapminder, "lifeExp")
-plt2 <- quick_dist(gapminder::gapminder, "continent")
-
 test_that("Testing whether the output for a numeric variable are density and vlines plots and for a categorical, a bar chart.", {
+
+  plt1 <- quick_dist(gapminder::gapminder, "lifeExp")
+  plt2 <- quick_dist(gapminder::gapminder, "continent")
 
   expect_true(
     "GeomDensity" %in% class(plt1$layers[[1]]$geom) &&
@@ -14,6 +14,10 @@ test_that("Testing whether the output for a numeric variable are density and vli
 
 test_that("Testing whether aesthetic mappings are correct in both type of plots",
           {
+
+            plt1 <- quick_dist(gapminder::gapminder, "lifeExp")
+            plt2 <- quick_dist(gapminder::gapminder, "continent")
+
             expect_equal(as.character(rlang::get_expr(plt1$mapping$x)), "lifeExp")
             expect_equal(as.character(rlang::get_expr(plt2$mapping$x)), "continent")
           })
